@@ -1,0 +1,20 @@
+{
+  "awsIoTConfigs": {
+    "keyFileName": "alya-smart-mirror.private.key",
+    "certFileName": "alya-smart-mirror.cert.pem",
+    "caFileName": "root-CA.crt",
+    "clientId": "alya_smart_mirror_lambda",
+    "region": "us-east-1",
+    "host": "ak6hspilv9mrx.iot.us-east-1.amazonaws.com"
+  },
+  "appIDConfig": {
+    "search_video_appID": "amzn1.ask.skill.c57cb164-9aac-4372-ae63-6e40e54d84b5",
+    "previous_appID": "amzn1.ask.skill.8407df0f-c031-4c26-85f1-c01a0abcc009",
+    "next_appID": "amzn1.ask.skill.afb61f31-43b6-4ec6-b6fb-9536316fb679",
+    "choose_video_appID": "amzn1.ask.skill.19f97d43-721e-4979-90a0-50b59c16fbd3",
+    "pause_video_appID": "amzn1.ask.skill.567e7714-5da0-4527-bcc4-54a4603e4728",
+    "resume_video_appID": "amzn1.ask.skill.0b6ff1e4-e29c-4cb6-ad63-ff633db00e19",
+    "close_video_appID": "amzn1.ask.skill.9d60a690-486e-47ae-9237-5ed9efcafe22"
+
+  }
+}

@@ -1,0 +1,10 @@
+
+node_modules/
+
+certs/alya-smart-mirror\.cert\.pem
+
+certs/alya-smart-mirror\.private\.key
+
+certs/alya-smart-mirror\.public\.key
+
+certs/root-CA\.crt
