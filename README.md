@@ -8,8 +8,14 @@ If you have amazon account go and login and complete the registration for an ama
 
 ###1.install dependencies
 Using  `npm install`
+
 ###2.AWS-IOT
+
 1.Go to [amazon management console] (https://console.aws.amazon.com/console/home?region=us-east-1) and search for AWS iot 
+
+
+<img width="1439" alt="aws iot" src="https://user-images.githubusercontent.com/21360696/35481509-1eb0bcde-0425-11e8-842b-9e4823f81564.png">
+
 
 2.In the aws iot go to onboard and press get started on configuring a device then press get started again
 
