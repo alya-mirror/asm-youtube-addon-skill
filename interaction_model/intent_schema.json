@@ -1,0 +1,13 @@
+{
+  "intents": [
+    {
+      "slots": [
+        {
+          "name": "searchTermVideo",
+          "type": "AMAZON.LITERAL"
+        }
+      ],
+      "intent": "YoutubeIntent"
+    }
+  ]
+}

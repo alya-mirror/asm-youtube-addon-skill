@@ -10,39 +10,39 @@ If you have amazon account go and login and complete the registration for an ama
 Using  `npm install`
 ### 2.AWS-IOT
 
-1.Go to [amazon management console](https://console.aws.amazon.com/console/home?region=us-east-1) and search for AWS iot 
+1-Go to [amazon management console](https://console.aws.amazon.com/console/home?region=us-east-1) and search for AWS iot 
 
 <img width="1439" alt="aws iot" src="https://user-images.githubusercontent.com/21360696/35481578-cde0f376-0426-11e8-88cd-cfa6c485a5c0.png">
 
 
-2.In the aws iot go to onboard and press get started on configuring a device then press get started again
+2-In the aws iot go to onboard and press get started on configuring a device
 
 <img width="1424" alt="aws iot 2" src="https://user-images.githubusercontent.com/21360696/35481605-26ba3480-0427-11e8-8a58-fa417ea876eb.png">
 
 
-3.Choose Linux/OSX and Nodejs 
+3-Choose Linux/OSX and Nodejs 
 
 <img width="1435" alt="aws-iot2" src="https://user-images.githubusercontent.com/21360696/35481584-e81fadd6-0426-11e8-9d83-3279184479f9.png">
 
 
-4.Name it any name and then press next
+4-Name it any name and then press next
 
 <img width="1401" alt="aws-iot3" src="https://user-images.githubusercontent.com/21360696/35481586-edc077e8-0426-11e8-97ff-f1201ebce807.png">
 
 
-5.download the certificates
+5-download the certificates
 
 <img width="1403" alt="5" src="https://user-images.githubusercontent.com/21360696/35481608-326570a6-0427-11e8-9c5e-9c5cbcce64fb.png">
 
 
-6.unzip the folder and then go to terminal and run start.sh script, which will generate a root-CA.crt
+6-unzip the folder and then go to terminal and run start.sh script, which will generate a root-CA.crt
 
 <img width="1425" alt="6" src="https://user-images.githubusercontent.com/21360696/35481609-379ea312-0427-11e8-91d9-9e4caf5eb39a.png">
 
 <img width="761" alt="7" src="https://user-images.githubusercontent.com/21360696/35481613-46a19dba-0427-11e8-844e-c91bea06df81.png">
 
 
-7.Copy the highlighted files to 'certs' folder on this repository and in the 'certs' folder in [asm-youtube](https://github.com/alya-smart-mirror/asm-youtube)
+7-Copy the highlighted files into 'certs' folder on this repository and in the 'certs' folder in [asm-youtube](https://github.com/alya-smart-mirror/asm-youtube)
 
 ### 3.Deploy the code into Lmabda
 1-Go to [amazon management console](https://console.aws.amazon.com/console/home?region=us-east-1) and search for lambda 
@@ -57,18 +57,18 @@ Using  `npm install`
 
 3-Name the function any name
 
+for the role 'choose an existing role' then choose lambda basic_execution and then press on create function
+
 <img width="1403" alt="3" src="https://user-images.githubusercontent.com/21360696/35481633-94e9cb1e-0427-11e8-96bb-6c182d195db5.png">
 
 
-for the role 'choose an existing role' then choose lambda basic_execution and then press on create function
-
 4-Go to code entry type and change it to upload zip file 
 
+Zip the folder of this repository ( after you have added your certificates from aws iot to the certs folder)
+And then upload it here
 
 <img width="1382" alt="4" src="https://user-images.githubusercontent.com/21360696/35481632-94ce5d20-0427-11e8-91e3-0bfe2e4659f9.png">
 
-Zip the folder of this repository ( after you have added your certificates from aws iot to the certs folder)
-And then upload it there
 
 5-Press on Alexa Skill Kit. Make the skill ID verification disabled and then press Add
 
@@ -99,7 +99,7 @@ Others are just simple commands using Alexa invocation name as a command
 <img width="1368" alt="2" src="https://user-images.githubusercontent.com/21360696/35481647-cf6dc380-0427-11e8-92c7-b5092e91fb99.png">
 
 
-3-Copy the intent schema and the sample utterances from the file and then press save to build your model
+3-Copy the intent schema and the sample utterances from the interaction_model folder in this repository and then press save to build your model
 
 <img width="1429" alt="3" src="https://user-images.githubusercontent.com/21360696/35481646-cf52f0fa-0427-11e8-87c6-2dff5410dbf8.png">
 
@@ -109,11 +109,11 @@ Others are just simple commands using Alexa invocation name as a command
 <img width="1320" alt="4" src="https://user-images.githubusercontent.com/21360696/35481645-cf37f7d2-0427-11e8-8966-050598148a8a.png">
 
 
-Your skill is ready and you can test it
+Your skill is ready and you can test it !
 
 #### 2.The other 6 commands
-Each of these commands are done the same way just change the invocation name in each
-##### 1.Go Next command
+Each of these  6 commands are done the same way just change the invocation name in each
+##### 1-Go Next command
 1-Name it any name and make the invocation name 'go next' ( for go next command )
 
 <img width="1226" alt="1" src="https://user-images.githubusercontent.com/21360696/35481661-fe790478-0427-11e8-9b42-f4fd43db63f0.png">
@@ -126,12 +126,13 @@ Each of these commands are done the same way just change the invocation name in 
 
 3-Add sample Intent just to make the skill build and work , for me I added simple help intent and then press on Build Model and wait few minutes 
 
-4-Press on configuration and copy the same ARN you got from the lambda here ( the same ARN for all the skills you will create )
-
 <img width="1404" alt="3" src="https://user-images.githubusercontent.com/21360696/35481659-fe43844c-0427-11e8-812c-1afc18d49810.png">
 
 
-##### 2.For all other commands 
+4-Press on configuration and copy the same ARN you got from the lambda here ( the same ARN for all the skills you will create )
+
+
+##### 2-For all other commands 
 
 do the same as in the go next command just change the invocation name as follows
 
