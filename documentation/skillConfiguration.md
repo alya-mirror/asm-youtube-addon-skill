@@ -54,7 +54,7 @@ and example of one of the command :
 4-Press on configuration and copy the same ARN you got from the lambda here ( the same ARN for all the skills you will create )
 
 
-#### ⋅⋅*  the invocation name for the other 5 commands
+####  the invocation name for the other 5 commands
 
 
 1-previous command : Go Previous
