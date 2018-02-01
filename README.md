@@ -4,7 +4,7 @@ aws lambda function for handling multiple alexa custom skills and communicating 
 ## setup
 You need to create [amazon developer account](https://www.amazon.com/ap/register?clientContext=132-4087873-5138427&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&siteState=clientContext%3D147-7667280-1228742%2CsourceUrl%3Dhttps%253A%252F%252Fdeveloper.amazon.com%252F%2Csignature%3DJBzIGEC6F5riKhIYjDe63xAfnGkj3D&marketPlaceId=ATVPDKIKX0DER&language=en_US&pageId=amzn_developer_portal&openid.return_to=https%3A%2F%2Fdeveloper.amazon.com%2F&prevRID=AQRCRPWJ1YQQVA81AK49&openid.assoc_handle=mas_dev_portal&openid.mode=checkid_setup&prepopulatedLoginId=&failedSignInCount=0&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0) if you don't have amazon account at all
 
-If you have amazon account go and login and complete the registration for an amazon account
+If you have amazon account go and login and complete the registration for a [developer amazon account](https://developer.amazon.com/registration/profile.html)
 
 ### 1.install dependencies
 Using  `npm install`
