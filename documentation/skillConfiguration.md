@@ -34,7 +34,7 @@ Your skill is ready and you can test it !
 ### 2.The 6 commands
 Each of these  6 commands are done the same way just change the invocation name in each
 
-and example of one of the command :
+example of one of the command :
 #### ⋅⋅* Go Next command
 1-Name it any name and make the invocation name 'go next' ( for go next command )
 
