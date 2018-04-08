@@ -32,4 +32,4 @@
 <img width="761" alt="7" src="https://user-images.githubusercontent.com/21360696/35481613-46a19dba-0427-11e8-844e-c91bea06df81.png">
 
 
-7-Copy the highlighted files into 'certs' folder on this repository and in the 'certs' folder in [asm-youtube](https://github.com/alya-smart-mirror/asm-youtube)
+7-Copy the highlighted files into 'certs' folder on this repository and in the 'certs' folder in [alya-smart-mirror](https://github.com/alya-mirror/alya-smart-mirror)
