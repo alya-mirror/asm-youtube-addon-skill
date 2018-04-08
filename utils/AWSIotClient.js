@@ -12,7 +12,7 @@ class IOTClient {
         keyPath: `${certsFolderPath}/${configs.keyFileName}`,
         certPath: `${certsFolderPath}/${configs.certFileName}`,
         caPath: `${certsFolderPath}/${configs.caFileName}`,
-        clientId: configs.clientId,
+        clientId: configs.clientId + Date.now(),
         region: configs.region,
         host: configs.host
       });

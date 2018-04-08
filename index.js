@@ -4,7 +4,7 @@
 const AWSIoTclient = require('./utils/AWSIotClient');
 const Alexa = require('alexa-sdk');
 
-const YOUTUBE_TOPIC = 'AlyaSmartMirror:youtube_module';
+const TOPIC = 'AlyaSmartMirror';
 const awsIotClient = new AWSIoTclient();
 const config = require('./config.defaults');
 
@@ -42,7 +42,7 @@ const search_video_handlers = {
       awsIotClient.disconnect();
     };
     awsIotClient.connect(config.awsIoTConfigs).then(() => {
-      awsIotClient.publish(YOUTUBE_TOPIC, {
+      awsIotClient.publish(TOPIC, {
         "skill": "search_video",
         "searchTerm": searchTerm,
       }, {}, alexaEmit);
@@ -63,7 +63,7 @@ const next_handler = {
       awsIotClient.disconnect();
     };
     awsIotClient.connect(config.awsIoTConfigs).then(() => {
-      awsIotClient.publish(YOUTUBE_TOPIC, {
+      awsIotClient.publish(TOPIC, {
         "skill": "next",
       }, {}, alexaEmit);
     });
@@ -82,7 +82,7 @@ const previous_handler = {
       awsIotClient.disconnect();
     };
     awsIotClient.connect(config.awsIoTConfigs).then(() => {
-      awsIotClient.publish(YOUTUBE_TOPIC, {
+      awsIotClient.publish(TOPIC, {
         "skill": "previous",
       }, {}, alexaEmit);
     });
@@ -101,7 +101,7 @@ const choose_video_handler = {
       awsIotClient.disconnect();
     };
     awsIotClient.connect(config.awsIoTConfigs).then(() => {
-      awsIotClient.publish(YOUTUBE_TOPIC, {
+      awsIotClient.publish(TOPIC, {
         "skill": "choose_video",
       }, {}, alexaEmit);
     });
@@ -120,7 +120,7 @@ const pause_video_handler = {
       awsIotClient.disconnect();
     };
     awsIotClient.connect(config.awsIoTConfigs).then(() => {
-      awsIotClient.publish(YOUTUBE_TOPIC, {
+      awsIotClient.publish(TOPIC, {
         "skill": "pause_video",
       }, {}, alexaEmit);
     });
@@ -139,7 +139,7 @@ const resume_video_handler = {
       awsIotClient.disconnect();
     };
     awsIotClient.connect(config.awsIoTConfigs).then(() => {
-      awsIotClient.publish(YOUTUBE_TOPIC, {
+      awsIotClient.publish(TOPIC, {
         "skill": "resume_video",
       }, {}, alexaEmit);
     });
@@ -158,8 +158,8 @@ const close_video_handler = {
       awsIotClient.disconnect();
     };
     awsIotClient.connect(config.awsIoTConfigs).then(() => {
-      awsIotClient.publish(YOUTUBE_TOPIC, {
-        "skill": "close_video",
+      awsIotClient.publish(TOPIC, {
+        "skill": "close",
       }, {}, alexaEmit);
     });
   },
